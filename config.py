@@ -5,6 +5,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
+    BLOB_URL = os.environ.get('BLOB_URL') or 'https://thoanvttproject1storage.blob.core.windows.net/'
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'thoanvttproject1storage'
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'BuDYGFHMJEKfoyy5pYVJB1fnUgmTVtj0CglPJJZL5x2TuUBefGyvGDCuMgXk/YrEbZdcV9M5eqTZ+AStdZW4Ow=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
