@@ -10,12 +10,12 @@ class Config(object):
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'BuDYGFHMJEKfoyy5pYVJB1fnUgmTVtj0CglPJJZL5x2TuUBefGyvGDCuMgXk/YrEbZdcV9M5eqTZ+AStdZW4Ow=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'thoanvtt-server.database.windows.net'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'project1-thoanvtt-server.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'project1-db'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'udacityadmin'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'p@ssword1234'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'password1234_'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
-    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+17+for+SQL+Server'
+    SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+18+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     ### Info for MS Authentication ###
